@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>catalog</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230727205313">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Clothes</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Shoes</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="" class="header__logo"><img src="img/header/Logo.svg" alt="logo"></a>
+				<div class="header__actions actions-header">
+					<form action="#" class="actions-header__search search-header">
+						<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Search..." class="search-header__input input">
+						<button type="submit" class="search-header__button">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+					<div class="actions-header__items">
+						<a href="#" class="actions-header__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#user"></use>
+							</svg>
+						</a>
+						<a href="#" class="actions-header__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#cart"></use>
+							</svg>
+						</a>
+						<a href="#" class="actions-header__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#favorite"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">Закрити</button>
+					<div class="popup__text">
+						Text
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__catalog catalog">
+				<div class="catalog__container_content">
+					<h1 class="catalog__title">CLOTHES</h1>
+					<div class="catalog__body">
+						<form class="catalog__form">
+							<aside data-spollers="991.98" class="catalog__filter filter">
+								<details class="filter__spollers">
+									<summary class="filter__open">Filter open</summary>
+									<div class="spollers__body">
+										<div class="filter__blocks">
+											<div class="filter__block">
+												<div class="filter__header">
+													<h2 class="filter__title">Category</h2>
+												</div>
+												<div class="filter__body category-filter">
+													<ul class="category-filter__list">
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link _active">All</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Dresses</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Denim</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Jumpsuits</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Tops</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Jackets and coats</a>
+														</li>
+														<li class=category-filter__item">
+															<a href="#" class="category-filter__link">Pants</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Shorts </a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Skirts</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Loungerie & underwear</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Leather</a>
+														</li>
+														<li class="category-filter__item">
+															<a href="#" class="category-filter__link">Sweaters & knits</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="filter__block">
+												<div class="filter__header">
+													<h2 class="filter__title">Size</h2>
+													<button type="submit" class="filter__button">Clear
+														<svg width="7px" height="7px">
+															<use xlink:href="img/icons/icons.svg#close"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="filter__body size-filter">
+													<div class="size-filter__item checkbox">
+														<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_1" class="checkbox__label"><span class="checkbox__text">XXS</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_2" class="checkbox__label"><span class="checkbox__text">XS</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_3" class="checkbox__label"><span class="checkbox__text">S</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_4" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_4" class="checkbox__label"><span class="checkbox__text">M</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_5" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_5" class="checkbox__label"><span class="checkbox__text">L</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_6" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_6" class="checkbox__label"><span class="checkbox__text">XL</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_7" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_7" class="checkbox__label"><span class="checkbox__text">23</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_8" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_8" class="checkbox__label"><span class="checkbox__text">24</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_9" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_9" class="checkbox__label"><span class="checkbox__text">25</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_10" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_10" class="checkbox__label"><span class="checkbox__text">26</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_11" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_11" class="checkbox__label"><span class="checkbox__text">27</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_12" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_12" class="checkbox__label"><span class="checkbox__text">28</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_13" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_13" class="checkbox__label"><span class="checkbox__text">29</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_14" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_14" class="checkbox__label"><span class="checkbox__text">30</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_15" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_15" class="checkbox__label"><span class="checkbox__text">31</span></label>
+													</div>
+													<div class="size-filter__item checkbox">
+														<input id="c_16" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_16" class="checkbox__label"><span class="checkbox__text">32</span></label>
+													</div>
+												</div>
+											</div>
+											<div class="filter__block">
+												<div class="filter__header">
+													<h2 class="filter__title">Color</h2>
+													<button type="submit" class="filter__button">Clear
+														<svg width="7px" height="7px">
+															<use xlink:href="img/icons/icons.svg#close"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="filter__body color-filter">
+													<div class="color-filter__item color-filter__item_beige checkbox">
+														<input id="c_17" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_17" class="checkbox__label"><span class="checkbox__text">Beige</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_blue checkbox">
+														<input id="c_18" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_18" class="checkbox__label"><span class="checkbox__text">Blue</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_black checkbox">
+														<input id="c_19" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_19" class="checkbox__label"><span class="checkbox__text">Black</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_orange checkbox">
+														<input id="c_20" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_20" class="checkbox__label"><span class="checkbox__text">Orange</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_green checkbox">
+														<input id="c_21" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_21" class="checkbox__label"><span class="checkbox__text">Green</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_brown checkbox">
+														<input id="c_22" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_22" class="checkbox__label"><span class="checkbox__text">Brown</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_purple checkbox">
+														<input id="c_23" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_23" class="checkbox__label"><span class="checkbox__text">Purple</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_gold checkbox">
+														<input id="c_24" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_24" class="checkbox__label"><span class="checkbox__text">Gold</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_taupe checkbox">
+														<input id="c_25" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_25" class="checkbox__label"><span class="checkbox__text">Taupe</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_white checkbox">
+														<input id="c_26" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_26" class="checkbox__label"><span class="checkbox__text">White</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_pink checkbox">
+														<input id="c_27" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_27" class="checkbox__label"><span class="checkbox__text">Pink</span></label>
+													</div>
+													<div class="color-filter__item color-filter__item_red checkbox">
+														<input id="c_28" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_28" class="checkbox__label"><span class="checkbox__text">Red</span></label>
+													</div>
+
+
+
+												</div>
+											</div>
+											<div class="filter__block">
+												<div class="filter__header">
+													<h2 class="filter__title">Price</h2>
+													<button type="submit" class="filter__button">Clear
+														<svg width="7px" height="7px">
+															<use xlink:href="img/icons/icons.svg#close"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="filter__body price-filter">
+													<div class="price-filter__item checkbox">
+														<input id="c_29" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_29" class="checkbox__label"><span class="checkbox__text">₦ 0 - ₦ 10,000</span></label>
+													</div>
+													<div class="price-filter__item checkbox">
+														<input id="c_30" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_30" class="checkbox__label"><span class="checkbox__text">₦ 10,000 - ₦ 20,000</span></label>
+													</div>
+													<div class="price-filter__item checkbox">
+														<input id="c_31" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_31" class="checkbox__label"><span class="checkbox__text">₦ 20,000 - ₦ 50,000</span></label>
+													</div>
+													<div class="price-filter__item checkbox">
+														<input id="c_32" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_32" class="checkbox__label"><span class="checkbox__text">₦ 50,000 - ₦ 100,000</span></label>
+													</div>
+													<div class="price-filter__item checkbox">
+														<input id="c_33" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_33" class="checkbox__label"><span class="checkbox__text">₦ 100,000 - ₦ 200,000</span></label>
+													</div>
+													<div class="price-filter__selection selection">
+
+														<input class="selection__min" autocomplete="off" placeholder="₦" name="digi" type="number">
+
+														<p>to</p>
+
+														<input class="selection__max" autocomplete="off" placeholder="₦" name="digi" type="number">
+
+														<button type="submit" class="button-price">Apply</button>
+
+													</div>
+
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+							</aside>
+						</form>
+						<div class="catalog__content">
+							<div class="catalog__header">
+
+								<select name="form[]" data-class-modif="catalog">
+									<option value="1" selected>Sort by: Most popular</option>
+									<option value="2">Most popular</option>
+									<option value="3">Best Selling</option>
+									<option value="4">Price: High to Low</option>
+									<option value="4">Price: Low to High</option>
+								</select>
+							</div>
+							<div class="catalog__items items-catalog">
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/01.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button data-popup="#popup" type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/02.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/03.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/04.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/05.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/06.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/07.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/08.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/09.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/10.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/11.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/11.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/12.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/12.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/13.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/13.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/14.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/14.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/15.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/15.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+								<div class="items-catalog__item item-catalog">
+									<div class="item-catalog__main">
+										<a href="#" class="item-catalog__image-ibg">
+											<picture><source data-srcset="img/catalog/16.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog/16.jpg" alt="image"></picture>
+										</a>
+										<div class="item-catalog__actions">
+											<button type="button" class="item-catalog__favorite">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#favorite1"></use>
+												</svg>
+											</button>
+											<button type="button" class="item-catalog__cart">ADD TO CART
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cartred"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="item-catalog__foter">
+										<a href="#" class="item-catalog__title">Multicolored armless top</a>
+										<div class="item-catalog__price">₦10,000</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="main-catalog__pagging">
+								<div class="pagging">
+									<a href="" class="pagging__arrow pagging__arrow_back">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+									<ul class="pagging__list">
+										<li>
+											<a href="" class="pagging__item _active">1</a>
+										</li>
+										<li>
+											<a href="" class="pagging__item">2</a>
+										</li>
+										<li>
+											<a href="" class="pagging__item">3</a>
+										</li>
+
+									</ul>
+									<a href="" class="pagging__arrow">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="page__up">
+				<button data-goto=".page" data-goto-header class="page__up-button" type="button">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#arrow"></use>
+					</svg>
+				</button>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container_content">
+				<div class="footer__logo">
+					<a href="#" class="footer__logo-link">
+						<img src="img/footer/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div class="footer__information information">
+					<div class="information__about"><a href="#">About Us</a></div>
+					<div class="information__contact"><a href="#">Contact</a></div>
+					<div class="information__terms"><a href="#">Terms&Conditions</a></div>
+				</div>
+				<div class="footer__social">
+					<div class="footer__fb">
+						<a href="#" class="footer__fb-icon">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#fb"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer__fb-name">Facebook</a>
+					</div>
+					<div class="footer__tw">
+						<a href="#" class="footer__tw-icon">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#tw"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer__tw-name">Twitter</a>
+					</div>
+					<div class="footer__insta">
+						<a href="#" class="footer__insta-icon">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#insta"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer__insta-name">Instagram</a>
+					</div>
+				</div>
+				<div class="footer__form form-footer">
+					<h3 class="form-footer__title">Subscribe to our newsletter</h3>
+					<form action="files/sendmail/sendmail.php" method="POST">
+						<input type="text" name="form[email]" data-dev data-required="email" data-error="Error" placeholder="E-mail" class="form-footer__input">
+						<button type="submit" class="button">ok</button>
+					</form>
+				</div>
+				<div class="footer__adress">
+					<img src="img/footer/adress.svg " alt="image">
+				</div>
+
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230727205313"></script>
+</body>
+
+</html>
